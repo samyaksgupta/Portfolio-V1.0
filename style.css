@@ -146,6 +146,19 @@ a.profile {
 
 a.profile:after {
 	font-size: .75em;
+	display: none;
+	content: attr(data-attr);
+	position: absolute;
+	bottom: -30px;
+	left: 130px;
+	transform: translate(-50%, -42.5px);
+	font-weight: 300;
+	white-space: pre;
+	color: var(--focus-dark);
+}
+a.profile:hover:after,
+a.profile:focus:after {
+	display: inline-block;
 }
 
 .battery span i {
