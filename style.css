@@ -224,6 +224,46 @@ main nav a {
 	box-shadow: var(--shadow);
 	border-radius: 100%;
 }
+.games .item {
+    display: inline-block;
+    margin: 0 7px;
+    --d: 255px;
+    height: var(--d);
+    width: var(--d);
+    flex-shrink: 0;
+    background: var(--bg);
+    border: 3px solid var(--solid);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    position: relative; /* Added for positioning the game name */
+}
+
+.games .item img {
+    width: 100%;
+}
+
+/* Added styles for the game name */
+.games .item:after {
+    display: none;
+    content: attr(data-attr);
+    position: absolute;
+    top: 100%; /* Positioning the game name at the center of the image */
+    left: 50%; /* Positioning the game name at the center of the image */
+    transform: translate(-50%, -50%); /* Centering the game name */
+    font-size: 26px;
+	font-weight: 400;
+	white-space: pre;
+	color: var(--focus-dark);
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 5px 100%; /* Padding around the game name */
+    border-radius: 5px; /* Rounded corners for the background */
+	z-index: 100;
+}
+
+/* Show the game name on hover */
+.games .item:hover:after {
+    display: inline-block;
+}
 
 
 /*=========== footer =============*/
