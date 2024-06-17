@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta attr="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- Link to style.css -->
     <link rel="stylesheet" href="style.css">
@@ -14,44 +14,55 @@
     <div class="wrapper flex flex-col">
         <header class="flex v-center">
             <a data-attr="User's Page" href="#" class="profile">
-				<img src="assets/samyak.jpg" alt="User's Profile" class="profile-image">
-			</a>
-			
+                <img src="assets/samyak.jpg" alt="User's Profile" class="profile-image">
+            </a>
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected">Projects</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li>AI/ML Projects</li>
+                    <li>IOT Projects</li>
+                    <li>C++ Projects</li>
+                    <li class="active">Projects</li>
+                </ul>
+            </div>
+            
             <div class="time">
                 <span id="time"></span>
             </div>
             <div class="wifi">
-                <img src="assets/wifi.svg" />
+                <img src="assets/wifi.svg" alt=""/>
             </div>
             <div class="battery">
-                
-                <img src="assets/s.svg" />
+                <img src="assets/s.svg" alt=""/>
             </div>
         </header>
         <main>
             <div class="games">
-                <a href="#" class="item"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg"/></a>
-                <a href="#" class="item"><img src="https://cdn03.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ShovelKnightTreasureTrove.jpg"/></a>
-                <a href="#" class="item"><img src="https://cdn03.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_SuperBombermanR.jpg"/></a>
-                <a href="#" class="item"></a>
-                <a href="#" class="item"></a>
-                <a href="#" class="item"></a>
-                <a href="#" class="item"></a>
-                <a href="#" class="item"></a>
-                <a href="#" class="item"></a>
-                <a href="#" class="item"></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Shovel Knight"><img src="https://cdn03.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ShovelKnightTreasureTrove.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Super Bomberman R"><img src="https://cdn03.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_SuperBombermanR.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
+                <a href="#" class="item" data-attr="Breath of the Wild"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg" alt=""/></a>
             </div>
             <nav>
-                <a data-attr="News" href="#"><img src="assets/newsfeed.svg" /></a>
-                <a data-attr="Nintendo eShop" href="#"><img src="assets/eShop.svg" /></a>
-                <a data-attr="Album" href="#"><img src="assets/gallary.svg" /></a>
-                <a data-attr="Controllers" href="#"><img src="assets/controller.svg" /></a>
-                <a data-attr="System Settings" href="#"><img src="assets/settings.svg" /></a>
-                <a data-attr="Sleep Mode" href="#"><img src="assets/power.svg" /></a>
+                <a data-attr="News" href="#"><img src="assets/newsfeed.svg" alt="" /></a>
+                <a data-attr="Nintendo eShop" href="#"><img src="assets/eShop.svg" alt="" /></a>
+                <a data-attr="Album" href="#"><img src="assets/gallary.svg" alt="" /></a>
+                <a data-attr="Controllers" href="#"><img src="assets/controller.svg" alt=""/></a>
+                <a data-attr="System Settings" href="#"><img src="assets/settings.svg" alt=""/></a>
+                <a data-attr="Sleep Mode" href="#"><img src="assets/power.svg" alt="" /></a>
             </nav>
         </main>
         <footer class="flex">
-            
             <div class="accept flex v-center">
                 <div class="btn">A</div>
                 <span>OK</span>

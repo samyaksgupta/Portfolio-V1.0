@@ -104,8 +104,8 @@ a:focus {
 
 header {
 	margin-bottom: auto;
-	padding: 0 25px;
-	font-size: 28px;
+	padding: 0px 25px 0px 2px;
+	font-size: 24px;
 	font-weight: 600;
 }
 
@@ -150,7 +150,7 @@ a.profile:after {
 	content: attr(data-attr);
 	position: absolute;
 	bottom: -30px;
-	left: 130px;
+	left: 119px;
 	transform: translate(-50%, -42.5px);
 	font-weight: 300;
 	white-space: pre;
@@ -224,6 +224,46 @@ main nav a {
 	box-shadow: var(--shadow);
 	border-radius: 100%;
 }
+.games .item {
+    display: inline-block;
+    margin: 0 7px;
+    --d: 255px;
+    height: var(--d);
+    width: var(--d);
+    flex-shrink: 0;
+    background: var(--bg);
+    border: 3px solid var(--solid);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    position: relative; /* Added for positioning the game name */
+}
+
+.games .item img {
+    width: 100%;
+}
+
+/* Added styles for the game name */
+.games .item:after {
+    display: none;
+    content: attr(data-attr);
+    position: absolute;
+    top: 100%; /* Positioning the game name at the center of the image */
+    left: 50%; /* Positioning the game name at the center of the image */
+    transform: translate(-50%, -50%); /* Centering the game name */
+    font-size: 26px;
+	font-weight: 400;
+	white-space: pre;
+	color: var(--focus-dark);
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 5px 100%; /* Padding around the game name */
+    border-radius: 5px; /* Rounded corners for the background */
+	z-index: 100;
+}
+
+/* Show the game name on hover */
+.games .item:hover:after {
+    display: inline-block;
+}
 
 
 /*=========== footer =============*/
@@ -251,4 +291,79 @@ footer {
 	font-size: .75em;
 	text-align: center;
 	color: var(--bg);
+}
+
+
+.dropdown {
+    min-width: 13em;
+	position: absolute;
+    top: 67px;
+    left: 94px;
+    margin: 4px;
+    font-size: 17px;
+}
+.select {
+    background: #EBEBEB;
+    color: #04B9C3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-radius: 0.5em;
+    padding: 5px;
+	
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+.select-clicked {
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+.select:hover {
+    background: #323741;
+}
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #04B9C3;
+    transition: 0.3s;
+}
+.caret-rotate {
+    transform: rotate(180deg);
+}
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu li:hover {
+    background: #2a2d35;
+}
+
+
+.menu-open {
+    display: block;
+    opacity: 1;
 }
